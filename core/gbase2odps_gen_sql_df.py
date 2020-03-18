@@ -15,7 +15,7 @@ from tqdm import tqdm
 import pandas as pd
 from utilities import logFun,readConf,tableMsg,typeMap
 
-logger = logFun.logModul('GBASE','gbase.log')
+logger = logFun.logModul('Gbase2Odps','gbase.log')
 conf = readConf.readConf()
 
 

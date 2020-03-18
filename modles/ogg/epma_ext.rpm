@@ -1,0 +1,13 @@
+#编辑内容
+#add extract epma_ext,exttrailsource ./dirdat/yx
+extract epma_ext
+getEnv (JAVA_HOME)
+getEnv (LD_LIBRARY_PATH)
+getEnv (PATH)
+CUSEREXIT ./libggjava_ue.so CUSEREXIT PASSTHRU INCLUDEUPDATEBEFORES,PARAMS '/data/aliyun-datahub-ogg-plugin/ggsconfig/epma_ext/epma_ext.properties'
+sourcedefs ./dirdef/yxsjzt.def
+table CACHER01.S_APPINFO 
+table CACHER01.C_BF_CONSPRC 
+table CACHER01.S_CONTRACT_MP 
+table CACHER01.A_CR_FLOW 
+table CACHER01.A_PAY_FLOW 
